@@ -5,21 +5,21 @@
 class Tome < Formula
   desc "Your spellbook for AI agent capabilities. Discover, install, and manage skills, commands, and prompts."
   homepage "https://github.com/kennyg/tome"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kennyg/tome/releases/download/v0.6.1/tome_0.6.1_darwin_amd64.tar.gz"
-      sha256 "5bc000468277943c0789999158082a8736401d69a372e2a1d0c314a1dfcdd34e"
+      url "https://github.com/kennyg/tome/releases/download/v0.6.2/tome_0.6.2_darwin_amd64.tar.gz"
+      sha256 "d16aa0a0122e9e6b806bfd8b0cc2568e3bb55536b8e38de6f951e0e9b511baca"
 
       def install
         bin.install "tome"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kennyg/tome/releases/download/v0.6.1/tome_0.6.1_darwin_arm64.tar.gz"
-      sha256 "f7e25c9082891ec8a5e510a3c78525d9be5363da46ca7964e19b547c67752404"
+      url "https://github.com/kennyg/tome/releases/download/v0.6.2/tome_0.6.2_darwin_arm64.tar.gz"
+      sha256 "ece9862d696a3c8a0c07076ba263f546d9e3b047b92f57bc77640923d588bd97"
 
       def install
         bin.install "tome"
@@ -29,15 +29,15 @@ class Tome < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennyg/tome/releases/download/v0.6.1/tome_0.6.1_linux_amd64.tar.gz"
-      sha256 "fb72461230838024b4653e17f1f892fa73c70087f4fa73043dd4b666e36f364b"
+      url "https://github.com/kennyg/tome/releases/download/v0.6.2/tome_0.6.2_linux_amd64.tar.gz"
+      sha256 "a3782fd046407faf1368d0422964da9a07c88fc1dfcb06510ef323134c06fac9"
       def install
         bin.install "tome"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennyg/tome/releases/download/v0.6.1/tome_0.6.1_linux_arm64.tar.gz"
-      sha256 "698d7f2f44f241ebe20c148c7a96131b8a88411335443c0956a2d970b2558b95"
+      url "https://github.com/kennyg/tome/releases/download/v0.6.2/tome_0.6.2_linux_arm64.tar.gz"
+      sha256 "df8b71b490cfea17ae5170aa4ab376381d0a77848895151fe1f31f869ecec05d"
       def install
         bin.install "tome"
       end
