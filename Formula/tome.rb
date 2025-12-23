@@ -5,21 +5,21 @@
 class Tome < Formula
   desc "Your spellbook for AI agent capabilities. Discover, install, and manage skills, commands, and prompts."
   homepage "https://github.com/kennyg/tome"
-  version "0.10.0"
+  version "0.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kennyg/tome/releases/download/v0.10.0/tome_0.10.0_darwin_amd64.tar.gz"
-      sha256 "69ff66bf13b7a9cd41ea0dbcaf259f207347e4ca9e9c0f01684529890b58bb26"
+      url "https://github.com/kennyg/tome/releases/download/v0.10.1/tome_0.10.1_darwin_amd64.tar.gz"
+      sha256 "edcee7df09b84f746246058da86987f8e7c56e5f2264c630b8ce9f5600d17436"
 
       def install
         bin.install "tome"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kennyg/tome/releases/download/v0.10.0/tome_0.10.0_darwin_arm64.tar.gz"
-      sha256 "e349cfdfa9fd09275c7aa84aba1b8b7b05522212ee2c271de858ab505714c1b3"
+      url "https://github.com/kennyg/tome/releases/download/v0.10.1/tome_0.10.1_darwin_arm64.tar.gz"
+      sha256 "a34b997ca5b00e58dc8377317bfd5d3eebaaf1618f8e434fd963d83f7ef119e1"
 
       def install
         bin.install "tome"
@@ -29,15 +29,15 @@ class Tome < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennyg/tome/releases/download/v0.10.0/tome_0.10.0_linux_amd64.tar.gz"
-      sha256 "d75526ead6c4906bad5674b63123826b099d2c871b81a5036f9b202e22b26aae"
+      url "https://github.com/kennyg/tome/releases/download/v0.10.1/tome_0.10.1_linux_amd64.tar.gz"
+      sha256 "85d83fcdc99d0272f1fec59c5a7edc6720b425cfaf7077dfc930a5626796be44"
       def install
         bin.install "tome"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennyg/tome/releases/download/v0.10.0/tome_0.10.0_linux_arm64.tar.gz"
-      sha256 "0fb60df853aa8c8061bc8060f3cc05329eda27300d853644c1dac4a9246a3cb0"
+      url "https://github.com/kennyg/tome/releases/download/v0.10.1/tome_0.10.1_linux_arm64.tar.gz"
+      sha256 "eef59332ab39ca9629dcf53da4f202d1e8d361e3b7a08d2423ec395209d0c432"
       def install
         bin.install "tome"
       end
