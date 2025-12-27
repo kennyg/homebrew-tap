@@ -11,7 +11,7 @@ class Tome < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kennyg/tome/releases/download/v0.12.2/tome_0.12.2_darwin_amd64.tar.gz"
-      sha256 "faa556078ac50394ba6b0a474422746e319739144e34ba162b8847acdacf4c27"
+      sha256 "7af90c1224554d46c2b20baebe9d943918833c1949172463f1c42217a874f245"
 
       def install
         bin.install "tome"
@@ -19,7 +19,7 @@ class Tome < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kennyg/tome/releases/download/v0.12.2/tome_0.12.2_darwin_arm64.tar.gz"
-      sha256 "881c4af0ead52d2d3688c77b8e4fa9ee86024a32438d9f7dbef9cb9e35fce562"
+      sha256 "f930c57f208211461fad3c35934aa7f8bba636e55cae5a0b85e0e2c8d6fe42eb"
 
       def install
         bin.install "tome"
@@ -30,14 +30,14 @@ class Tome < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kennyg/tome/releases/download/v0.12.2/tome_0.12.2_linux_amd64.tar.gz"
-      sha256 "050ce3af8911dddccba451b5ccfdc4b0bf32e6b6c89b686fb5cc7cc5e7db9520"
+      sha256 "f7a4d6737af63dd38ae8443386374a92d2f043674ad3019ccf87621fc9afa871"
       def install
         bin.install "tome"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kennyg/tome/releases/download/v0.12.2/tome_0.12.2_linux_arm64.tar.gz"
-      sha256 "0c02199d3cd67d97ea6039a37ba0cfa05bf408e57bd09f8d25e27be5bd241395"
+      sha256 "3ed4e87b634dbf6934a8660d4e698cd312eeae2904637b0e1f2259c9b1226693"
       def install
         bin.install "tome"
       end
